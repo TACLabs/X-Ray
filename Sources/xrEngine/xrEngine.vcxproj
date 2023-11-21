@@ -332,6 +332,12 @@
       <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /I "C:\Users\Alexandre\Desktop\X-Ray\Output\Binaries\*.dll" "C:\Users\Alexandre\Desktop\SPARKLET\binaries\" &amp;&amp; xcopy /Y /I "C:\Users\Alexandre\Desktop\X-Ray\Output\Binaries\xrEngine.exe" "C:\Users\Alexandre\Desktop\SPARKLET\binaries\" &amp;&amp; xcopy /Y /I "C:\Users\Alexandre\Desktop\X-Ray\Game\binaries\*.dll" "C:\Users\Alexandre\Desktop\SPARKLET\binaries\" </Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Installing les files...</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Dedicated|Win32'">
     <Midl>
