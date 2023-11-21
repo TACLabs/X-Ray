@@ -10,3 +10,8 @@ The original version was used in S.T.A.L.K.E.R.: Shadow of Chernobyl.
 ## How to launch
 - copy the "Output\Binaries" folder and the contents of the "Game" folder to the game folder;
 - run Launch.cmd.
+
+## COMMENT RENDRE LE TRUC UTILISABLE
+
+- Décompresser les fichiers gamedata dans le dossier gamedata, sinon ça plante au lancement
+- Copier les DLLs présentes dans le dossier "bin" d'un Repack ou de la version Steam, sinon, y'a pas de son
